@@ -4,3 +4,58 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-dark {
+    --main-font: "Inter-Variable";
+    --accent-font: "PressStart2P-Regular";
+    --bold-font-weight: 785;
+    --regular-font-weight: 465;
+    --background-color: #000000;
+    --background-image-color-repetitive:#000;
+    --background-image-color-stripes:#007f0c;
+    --background-mix-color:#004306;
+    --accent-color: #00CC14;
+    --min-width: 375px; 
+    --max-width: 1440px; 
+    --text-shadow:#000000;
+    --button-text-color:#00CC14;
+    --like-icon: red;
+    --like-icon-contour: #00CC14;
+}
+
+:root.theme-light {
+    --main-font: "Inter-Variable";
+    --accent-font: "PressStart2P-Regular";
+    --bold-font-weight: 700;
+    --regular-font-weight: 400;
+    --background-color: #FFFFFF;
+    --background-image-color-repetitive:#d3d3d3;
+    --background-image-color-stripes:#e7e7e7;
+    --background-mix-color:#1a1a1a;
+    --accent-color: #000000;
+    --min-width: 375px; 
+    --max-width: 1440px; 
+    --text-shadow:#FFFFFF;
+    --button-text-color:#ffffff;
+    --like-icon: red;
+    --like-icon-contour: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-font: "Inter-Variable";
+        --accent-font: "PressStart2P-Regular";
+        --bold-font-weight: 785;
+        --regular-font-weight: 465;
+        --background-color: #000000;
+        --background-image-color-repetitive:#000;
+        --background-image-color-stripes:#007f0c;
+        --background-mix-color:#004306;
+        --accent-color: #00CC14;
+        --min-width: 375px; 
+        --max-width: 1440px; 
+        --text-shadow:#000000;
+        --button-text-color:#00CC14;
+        --like-icon: red;
+        --like-icon-contour: #00CC14;
+    }
+}

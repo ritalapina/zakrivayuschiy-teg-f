@@ -12,3 +12,108 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+.like-icon.is-liked .sparks {
+    animation: sparks-opacity 0.5s ease-in 1 alternate;
+  }
+  
+  .like-icon.is-liked .heart {
+    animation: heart-scale 0.3s ease-in 0.1s 1 forwards;
+  }
+  
+  .contour {
+    fill: var(--like-icon-contour, #000);
+  }
+  
+  .like-icon.is-liked .contour {
+    fill: var(--like-icon, red);
+    transition: fill 0.3s ease 0.06s;
+  }
+  
+  .like-icon:active .contour {
+    fill: var(--like-icon, red);
+    transition: fill 0.3s ease 0.06s;
+  }
+  
+  .memory__main-section-button-like .main-body {
+    fill: transparent;
+    transition: fill 0.3s ease;
+  }
+  
+  .memory__main-section-button-like:hover .main-body {
+    fill: var(--like-icon-contour, #000);
+    transition: fill 0.3s ease 0.05s;
+  }
+  
+  .memory__main-section-button-like:active .main-body {
+    fill: red;
+    transition: fill 0.3s ease 0.05s;
+  }
+  
+  .like-icon {
+    inline-size: 42px;
+    block-size: 38px;
+  }
+  
+  .like-icon.is-liked .main-body {
+    fill: var(--like-icon, red);
+    transition: fill 0.3s ease;
+  }
+  
+  .memory__main-section-button-like .core {
+    fill: transparent;
+    transition: fill 0.3s ease 0.03s;
+  }
+  
+  .memory__main-section-button-like:hover .core {
+    fill: var(--like-icon-contour, #000);
+    transition: fill 0.3s ease;
+  }
+  
+  .memory__main-section-button-like:active .core {
+    fill: var(--like-icon, red);
+    transition: fill 0.3s ease;
+  }
+  
+  .like-icon.is-liked .core {
+    fill: var(--like-icon, red);
+    transition: fill 0.3s ease;
+  }
+  
+  .sparks {
+    opacity: 0;
+    fill: var(--like-icon, red);
+  }
+  
+  @keyframes header-arrow {
+      0% {
+          left: -12px;
+      }
+  
+      100% {
+          left: -16px;
+      }
+  }
+  
+  @keyframes heart-scale {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }
+  
+  @keyframes sparks-opacity {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+          opacity: 0;
+      }
+  }
