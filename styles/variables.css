@@ -1,10 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
+    --main-font-family: Inter, sans-serif;
+    --page-background: #fff;
     --main-font: "Inter-Variable";
     --accent-font: "PressStart2P-Regular";
     --bold-font-weight: 700;
     --regular-font-weight: 400;
-    --background-color: #FFFFFF;
+    --header-background: var(--page-background);
     --background-image-color-repetitive:#d3d3d3;
     --background-image-color-stripes:#e7e7e7;
     --background-mix-color:#1a1a1a;
