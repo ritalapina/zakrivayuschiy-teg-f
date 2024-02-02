@@ -17,7 +17,7 @@
   }
   
   .like-icon.is-liked .heart {
-    animation: heart-scale 0.3s ease-in 0.1s 1 forwards;
+    animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
   }
   
   .contour {
@@ -83,6 +83,7 @@
     opacity: 0;
     fill: var(--like-icon, red);
   }
+  
   
   @keyframes header-arrow {
       0% {
