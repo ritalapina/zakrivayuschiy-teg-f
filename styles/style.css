@@ -550,7 +550,6 @@ display: flex;
   }
 
   .icon__floppy {
-    inline-size: 28px;
     width: 21px;
     height: 21px;
 }
