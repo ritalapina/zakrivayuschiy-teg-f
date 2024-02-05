@@ -48,7 +48,6 @@
   flex-direction: column;
   align-items: center;
   margin-block-start: 101px;
-  max-width: 700px;
   flex-shrink: 0;
   margin: 100px 0;
   margin-block-end: 100px; 
@@ -57,9 +56,8 @@
   flex-direction: column;
   border: 2px solid var(--accent-color, #000);
   background: var(--header-background);
-  
   justify-self: center;
-  padding: 136px 0 23px;
+  padding: 136px 0 25px;
   gap: 21px;
   text-align: start;
 }
@@ -79,8 +77,6 @@ display: flex;
   font-weight: var(--regular-font-weight, 400);
   text-transform: uppercase;
   /* padding-block: 135px 22px; */
-  padding-block-start: clamp(7.5rem, 7.153rem + 1.497vw, 8.5rem);
-  padding-block-end: 22px;
 }
 
 .header__title {
@@ -89,7 +85,6 @@ display: flex;
   font-size: clamp(0.875rem, 0.68rem + 0.842vw, 1.438rem);
   font-weight: var(--regular-font-weight, 400);
   text-transform: uppercase;
-  margin-block-end: 24px;
 }
 
 .header__link {
@@ -99,12 +94,12 @@ display: flex;
 
 .theme-menu__list {
   display: grid;
-  gap: 7px;
+  gap: 12px;
   position: relative;
   padding-inline-start: 20px;
 }
 
-.theme-menu__list:hover {
+.theme-menu__button:hover {
   opacity: 0.6;
 }
 
@@ -197,7 +192,7 @@ display: flex;
 }
 
 .header__theme-menu {
-  padding-block-end: 22px;
+  padding-block-end: 20px;
 }
 
 .memory__conteiner {
@@ -287,8 +282,7 @@ display: flex;
   font-family: var(--main-font-family), sans-serif;
   font-size: 18px;
   font-weight: var(--regular-font-weight, 400);
-  line-height: 21px;  
-  
+  line-height: 21px; 
 }
 
 /*
@@ -301,7 +295,7 @@ display: flex;
 .memory__main-section-use {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: end;
   gap: 6px;
 }
 
@@ -313,7 +307,7 @@ display: flex;
   line-height: 90%;
   /* 12.6px */
   display: flex;
-  width: 130px;
+  width: 130px; 
   padding: 10px 0;
   justify-content: center;
   align-items: center;
@@ -327,7 +321,6 @@ display: flex;
   z-index: 1;
   mix-blend-mode: difference;
   color: var(--button-text-color, #ffffff);
-
 }
 
 .memory__main-section-button:focus {
@@ -505,16 +498,9 @@ display: flex;
   block-size: 39px;  
 }
 
-.button__text_ok {
+.ok-button {
   text-transform: uppercase;
   width: 100%;
-  padding: 10px 0; 
-  font-family: var(--accent-font, fantasy);
-  color: var(--button-text-color, #ffffff);
-  background: var(--background-color, #fff);
-  color: var(--button-text-color, #ffffff);
-  color: var(--accent-color, #000);
-  font-family: var(--accent-font, fantasy);
 }
 
 .dialog__content-text {
