@@ -18,7 +18,6 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   display: flex;
- 
   flex-direction: column;
   justify-content: center;
   font-family: var(--main-font, sans-serif);
@@ -42,24 +41,22 @@
   background: var(--background-color, #fff);
 }
 
-
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block-start: 101px;
   flex-shrink: 0;
   margin: 100px 0;
-  margin-block-end: 100px; 
   font-family: var(--accent-font), "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   border: 2px solid var(--accent-color, #000);
   background: var(--header-background);
   justify-self: center;
-  padding: 136px 0 25px;
-  gap: 21px;
+  padding-top: 136px; 
+  padding-block-end: 22px; 
   text-align: start;
+  gap: 21px; 
 }
 /* 
 display: flex;
@@ -70,6 +67,7 @@ display: flex;
   flex-shrink: 0;
   margin-block-end: 100px;
   */
+
 .header__main_title {
   color: var(--accent-color, #000);
   font-family: var(--accent-font, fantasy);
@@ -93,11 +91,16 @@ display: flex;
 }
 
 .theme-menu__list {
-  display: grid;
+  position: relative; 
+  display: grid; 
   gap: 12px;
-  position: relative;
-  padding-inline-start: 20px;
+  padding-inline-start: 20px; 
 }
+
+ /*
+.header__theme-menu { 
+  padding-block-end: 22px; 
+}*/
 
 .theme-menu__button:hover {
   opacity: 0.6;
@@ -191,9 +194,11 @@ display: flex;
   font-variation-settings: "wght" var(--bold-font-weight, 700);
 }
 
+/*
 .header__theme-menu {
   padding-block-end: 20px;
 }
+*/
 
 .memory__conteiner {
   position: relative;
@@ -554,4 +559,3 @@ display: flex;
     height: 21px;
 }
 }
-*/
